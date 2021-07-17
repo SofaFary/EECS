@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EESC ChatBot</title>
+	<style type="text/css">
+		body {
+			color: white;
+			background: #232323;
+			background-image: url('https://www.ciit.edu.ph/wp-content/uploads/2019/12/imageedit_7_8147831748.jpg');
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			line-height: 1.6; 
+			text-align: justify;
+		}
+		h1 {
+			text-align: center;
+		}
+		p {
+			color: black;
+			background: white;
+			opacity: 0.6;
+			margin-left: 400px;
+			margin-right: 400px;
+			align-self: center;
+			border: 2px solid white;
+  			border-radius: 5px; 
+		}
+	</style>
+</head>
+<body>
+<h1>Welcome To EECS ChatBot</h1>
+<p>This Page is about EECS ChatBot. It's an IBM Watson Assistance Facility. </br>I created it to help Electrical Engineers and computer Science graduated to find essential information for master degrees in the most sutiable and cheap universities in Europe like Germany, France or other with a good advices about that. </br>I hope you find it useful so enjoy.</p>
+<header>
+	<img src="https://www.ciit.edu.ph/wp-content/uploads/2019/12/imageedit_7_8147831748.jpg" width="100%" height="700">
+</header>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "f722d4e2-9e3c-4710-9e84-3127676fcc40", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "fe07a0ad-61c5-4d08-bc0a-4cdc5c469398", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
