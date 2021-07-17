@@ -25,11 +25,17 @@
 			border: 2px solid white;
   			border-radius: 5px; 
 		}
+		@media only screen and (max-width: 768px) {
+		  /* For mobile phones: */
+		  [class*="para"] {
+		    width: 100%;
+		  }
+		}
 	</style>
 </head>
 <body>
 <h1>Welcome To EECS ChatBot</h1>
-<p>This Page is about EECS ChatBot. It's an IBM Watson Assistance Facility. </br>I created it to help Electrical Engineers and computer Science graduated to find essential information for master degrees in the most sutiable and cheap universities in Europe like Germany, France or other with a good advices about that. </br>I hope you find it useful so enjoy.</p>
+<p class="para">This Page is about EECS ChatBot. It's an IBM Watson Assistance Facility. </br>I created it to help Electrical Engineers and computer Science graduated to find essential information for master degrees in the most sutiable and cheap universities in Europe like Germany, France or other with a good advices about that. </br>I hope you find it useful so enjoy.</p>
 <header>
 	<img src="https://www.ciit.edu.ph/wp-content/uploads/2019/12/imageedit_7_8147831748.jpg" width="100%" height="700">
 </header>
